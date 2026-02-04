@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan "Meta" - FIFA Elite 6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="player-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Player 5 - Purple Theme (#9d4edd) */
+        :root {
+            --player-color: #9d4edd;
+            --player-dark: #7d2bc4;
+            --player-glow: rgba(157, 78, 221, 0.3);
+            --player-light: #c9a3eb;
+        }
+        
+        .player-header {
+            background: linear-gradient(135deg, var(--player-dark), var(--player-color));
+        }
+        
+        .back-button:hover {
+            background: var(--player-color);
+        }
+        
+        .secret-stat {
+            border-color: var(--player-color);
+        }
+        
+        .highlight {
+            color: var(--player-color);
+        }
+        
+        .stat-fill {
+            background: linear-gradient(90deg, var(--player-dark), var(--player-color));
+        }
+        
+        .return-home {
+            background: var(--player-color);
+        }
+        
+        .return-home:hover {
+            box-shadow: 0 0 20px var(--player-glow);
+        }
+    </style>
+</head>
+<body class="player-page">
+    <div class="container">
+        <!-- Back Button -->
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Squad
+        </a>
+        
+        <!-- Player Header -->
+        <header class="player-header">
+            <div class="player-main-info">
+                <div class="player-avatar">
+                    <img src="Screenshot (109).png" alt="Ethan">
+                    <div class="player-rating">30</div>
+                </div>
+                <div class="player-details">
+                    <h1>Salva "Jota"</h1>
+                    <div class="player-tagline">The Missing one</div>
+                    <div class="player-motto">"GAY"</div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Player Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3><i class="fas fa-robot"></i> Meta Adherence</h3>
+                <div class="stat-value">98/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 98%;"></div>
+                </div>
+                <p class="stat-desc">All he does is shoot</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3><i class="fas fa-eye"></i> Looks</h3>
+                <div class="stat-value">100/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 12%;"></div>
+                </div>
+                <p class="stat-desc">he is one attractive man</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3><i class="fas fa-clipboard"></i> Goals Scored</h3>
+                <div class="stat-value">35/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 100%;"></div>
+                </div>
+                <p class="stat-desc">HIS OUR STRIKER!!!!</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3><i class="fas fa-gamepad"></i> Skill Ceiling</h3>
+                <div class="stat-value">74/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 74%;"></div>
+                </div>
+                <p class="stat-desc">Good at following instructions, terrible at adapting</p>
+            </div>
+        </div>
+        
+        <!-- Funny Facts -->
+        <div class="funny-section">
+            <h2><i class="fas fa-laugh"></i> Known For...</h2>
+            <div class="facts-grid">
+                <div class="fact">
+                    <i class="fas fa-youtube"></i>
+                    <h4>attractiveness</h4>
+                    <p>his very very handsome</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-sync"></i>
+                    <h4>Shooting and Missing</h4>
+                    <p>dont worry their on target</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-users"></i>
+                    <h4>being Missing</h4>
+                    <p>the stars have to align for salva to join us</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-cogs"></i>
+                    <h4>lagging</h4>
+                    <p>he lags alot </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Memorable Moments -->
+        <div class="moments-section">
+            <h2><i class="fas fa-star"></i> Legendary Moments</h2>
+            <div class="moment">
+                <div class="moment-date">January 2026</div>
+                <h4>The Game</h4>
+                <p>Salva actually joined us for a match"</p>
+            </div>
+          
+        <!-- Secret Stat (Easter Egg) -->
+        <div class="secret-stat">
+            <p><i class="fas fa-eye"></i> SECRET STAT: he misses 70% of shots but atleast his handsome</p>
+        </div>
+        
+        <!-- Quote -->
+        <div class="quote-section">
+            <i class="fas fa-quote-left"></i>
+            <p class="quote">"im lagging gents"</p>
+            <i class="fas fa-quote-right"></i>
+        </div>
+        
+        <!-- Footer -->
+        <div class="player-footer">
+            <p><span class="highlight">Weakness:</span> Being Missing</p>
+            <p><span class="highlight">Signature Move:</span> screamers</p>
+            <p><span class="highlight">Team of Choice:</span> Liverpool cause ofcourse</p>
+            <a href="index.html" class="return-home">
+                <i class="fas fa-home"></i> Back to Entire Squad
+            </a>
+        </div>
+    </div>
+    
+    <script src="player-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James - FIFA Elite 6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="player-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Player 4 - Blue Theme (#4d96ff) */
+        :root {
+            --player-color: #4d96ff;
+            --player-dark: #2d7aff;
+            --player-glow: rgba(77, 150, 255, 0.3);
+            --player-light: #99c2ff;
+        }
+        
+        .player-header {
+            background: linear-gradient(135deg, var(--player-dark), var(--player-color));
+        }
+        
+        .back-button:hover {
+            background: var(--player-color);
+        }
+        
+        .secret-stat {
+            border-color: var(--player-color);
+        }
+        
+        .highlight {
+            color: var(--player-color);
+        }
+        
+        .stat-fill {
+            background: linear-gradient(90deg, var(--player-dark), var(--player-color));
+        }
+        
+        .return-home {
+            background: var(--player-color);
+        }
+        
+        .return-home:hover {
+            box-shadow: 0 0 20px var(--player-glow);
+        }
+    </style>
+</head>
+<body class="player-page">
+    <div class="container">
+        <!-- Back Button -->
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Squad
+        </a>
+        
+        <!-- Player Header -->
+        <header class="player-header">
+            <div class="player-main-info">
+                <div class="player-avatar">
+                    <img src="Screenshot (107).png" alt="David">
+                    <div class="player-rating">80</div>
+                </div>
+                <div class="player-details">
+                    <h1>james "Pogba"</h1>
+                    <div class="player-tagline">Long Shot Merchant</div>
+                    <div class="player-motto">"Why walk it in when you can shoot from half line?"</div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Player Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3><i class="fas fa-bullseye"></i> Shot Power</h3>
+                <div class="stat-value">99/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 89%;"></div>
+                </div>
+                <p class="stat-desc">Breaks controllers from pressing shoot too hard</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3><i class="fas fa-bomb"></i> Risk Factor</h3>
+                <div class="stat-value">94/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 94%;"></div>
+                </div>
+                <p class="stat-desc">Will shoot from anywhere, anytime, any situation</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3><i class="fas fa-eye-slash"></i> Shot Selection</h3>
+                <div class="stat-value">95/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 31%;"></div>
+                </div>
+                <p class="stat-desc">if he shoots he scores</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3><i class="fas fa-crosshairs"></i> Goals Scored</h3>
+                <div class="stat-value">70/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 42%;"></div>
+                </div>
+                <p class="stat-desc">just a sniper </p>
+            </div>
+        </div>
+        
+        <!-- Funny Facts -->
+        <div class="funny-section">
+            <h2><i class="fas fa-laugh"></i> Known For...</h2>
+            <div class="facts-grid">
+                <div class="fact">
+                    <i class="fas fa-rocket"></i>
+                    <h4>Long Shot Addict</h4>
+                    <p>Shoots from kick-off if given half a yard</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-volume-up"></i>
+                    <h4>Commentary</h4>
+                    <p>Yells "BOOM" every time he presses shoot button</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-redo"></i>
+                    <h4>Repetition</h4>
+                    <p>Will try same failed long shot 10 times in a row</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-futbol"></i>
+                    <h4>Finesse Shots</h4>
+                    <p>Thinks "finesse" means "even harder shot"</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Memorable Moments -->
+        <div class="moments-section">
+            <h2><i class="fas fa-star"></i> Legendary Moments</h2>
+            <div class="moment">
+                <div class="moment-date">IDK</div>
+                <h4>The great ACL tear</h4>
+                <p>KNEES WEAK arms are heavy it seems</p>
+            </div>
+            
+        <!-- Secret Stat (Easter Egg) -->
+        <div class="secret-stat">
+            <p><i class="fas fa-eye"></i> SECRET STAT: Has taken 1,247 shots from outside box, scored 3 goals</p>
+        </div>
+        
+        <!-- Quote -->
+        <div class="quote-section">
+            <i class="fas fa-quote-left"></i>
+            <p class="quote">"oh shit i was just cyber bullied?"</p>
+            <i class="fas fa-quote-right"></i>
+        </div>
+        
+        <!-- Footer -->
+        <div class="player-footer">
+            <p><span class="highlight">Weakness:</span> his KNEES</p>
+            <p><span class="highlight">Signature Move:</span> The 40-yard screamer</p>
+            <p><span class="highlight">Team of Choice:</span> Any team with lionel messi in it</p>
+            <a href="index.html" class="return-home">
+                <i class="fas fa-home"></i> Back to Entire Squad
+            </a>
+        </div>
+    </div>
+    
+    <script src="player-script.js"></script>
+</body>
+</html>

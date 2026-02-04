@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tboy - FIFA Elite 6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="player-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Player 6 - Orange Theme (#ff9e6d) */
+        :root {
+            --player-color: #ff9e6d;
+            --player-dark: #ff7a3d;
+            --player-glow: rgba(255, 158, 109, 0.3);
+            --player-light: #ffc7ad;
+        }
+        
+        .player-header {
+            background: linear-gradient(135deg, var(--player-dark), var(--player-color));
+        }
+        
+        .back-button:hover {
+            background: var(--player-color);
+        }
+        
+        .secret-stat {
+            border-color: var(--player-color);
+        }
+        
+        .highlight {
+            color: var(--player-color);
+        }
+        
+        .stat-fill {
+            background: linear-gradient(90deg, var(--player-dark), var(--player-color));
+        }
+        
+        .return-home {
+            background: var(--player-color);
+        }
+        
+        .return-home:hover {
+            box-shadow: 0 0 20px var(--player-glow);
+        }
+    </style>
+</head>
+<body class="player-page">
+    <div class="container">
+        <!-- Back Button -->
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Squad
+        </a>
+        
+        <!-- Player Header -->
+        <header class="player-header">
+            <div class="player-main-info">
+                <div class="player-avatar">
+                    <img src="Screenshot (110).png" alt="Frank">
+                    <div class="player-rating">79</div>
+                </div>
+                <div class="player-details">
+                    <h1>Tboy"Botswanian"</h1>
+                    <div class="player-tagline">The kid</div>
+                    <div class="player-motto">"Who needs tactics when you have chaos?"</div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Player Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3><i class="fas fa-dice"></i> Randomness</h3>
+                <div class="stat-value">99/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 99%;"></div>
+                </div>
+                <p class="stat-desc">Even he doesn't know what he'll do next</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3><i class="fas fa-question"></i> Consistency</h3>
+                <div class="stat-value">0/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 0%;"></div>
+                </div>
+                <p class="stat-desc">Can beat anyone, lose to anyone - no pattern</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3><i class="fas fa-magic"></i> Surprise Factor</h3>
+                <div class="stat-value">100/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 100%;"></div>
+                </div>
+                <p class="stat-desc">Will do things nobody expects, including himself</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3><i class="fas fa-brain"></i> Decision Making</h3>
+                <div class="stat-value">27/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 27%;"></div>
+                </div>
+                <p class="stat-desc">Chooses chaos over logic every single time</p>
+            </div>
+        </div>
+        
+        <!-- Funny Facts -->
+        <div class="funny-section">
+            <h2><i class="fas fa-laugh"></i> Known For...</h2>
+            <div class="facts-grid">
+                <div class="fact">
+                    <i class="fas fa-random"></i>
+                    <h4>Complete Chaos</h4>
+                    <p>Formation changes every 10 minutes for no reason</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-surprise"></i>
+                    <h4>Self-Surprise</h4>
+                    <p>Even he's shocked by his own decisions sometimes</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-history"></i>
+                    <h4>No History</h4>
+                    <p>Can't learn from mistakes because they're never the same</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-users"></i>
+                    <h4>Team Confusion</h4>
+                    <p>Plays with bronze players "for the challenge"</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Memorable Moments -->
+        <div class="moments-section">
+            <h2><i class="fas fa-star"></i> Legendary Moments</h2>
+            <div class="moment">
+                <div class="moment-date">February 2026</div>
+                <h4>HE GOT FRIENDS AWWW</h4>
+                <p>He joined the greatest FIFA gc on earth</p>
+            </div>
+            
+        </div>
+        
+        <!-- Secret Stat (Easter Egg) -->
+        <div class="secret-stat">
+            <p><i class="fas fa-eye"></i> SECRET STAT: Has used every single formation in the game at least once</p>
+        </div>
+        
+        <!-- Quote -->
+        <div class="quote-section">
+            <i class="fas fa-quote-left"></i>
+            <p class="quote">"Dhania boyyyyyy'"</p>
+            <i class="fas fa-quote-right"></i>
+        </div>
+        
+        <!-- Footer -->
+        <div class="player-footer">
+            <p><span class="highlight">Weakness:</span> Consistency and predictable opponents</p>
+            <p><span class="highlight">Signature Move:</span> The "why not?" decision-making process</p>
+            <p><span class="highlight">Team of Choice:</span> Changes every game based on "vibes"</p>
+            <a href="index.html" class="return-home">
+                <i class="fas fa-home"></i> Back to Entire Squad
+            </a>
+        </div>
+    </div>
+    
+    <script src="player-script.js"></script>
+</body>
+</html>

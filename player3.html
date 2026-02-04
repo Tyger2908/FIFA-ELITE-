@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Tyger" - FIFA Elite 6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="player-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Player 3 - Yellow Theme (#ffdd59) */
+        :root {
+            --player-color: #ffdd59;
+            --player-dark: #ffc900;
+            --player-glow: rgba(255, 221, 89, 0.3);
+            --player-light: #ffeb99;
+        }
+        
+        .player-header {
+            background: linear-gradient(135deg, var(--player-dark), var(--player-color));
+        }
+        
+        .back-button:hover {
+            background: var(--player-color);
+        }
+        
+        .secret-stat {
+            border-color: var(--player-color);
+        }
+        
+        .highlight {
+            color: var(--player-color);
+        }
+        
+        .stat-fill {
+            background: linear-gradient(90deg, var(--player-dark), var(--player-color));
+        }
+        
+        .return-home {
+            background: var(--player-color);
+            color: #333;
+        }
+        
+        .return-home:hover {
+            box-shadow: 0 0 20px var(--player-glow);
+        }
+    </style>
+</head>
+<body class="player-page">
+    <div class="container">
+        <!-- Back Button -->
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Squad
+        </a>
+        
+        <!-- Player Header -->
+        <header class="player-header">
+            <div class="player-main-info">
+                <div class="player-avatar">
+                    <img src="Screenshot (111).png" alt="Chris">
+                    <div class="player-rating">46</div>
+                </div>
+                <div class="player-details">
+                    <h1>Chris "Skills"</h1>
+                    <div class="player-tagline">The Imposter</div>
+                    <div class="player-motto">"how did i get here?"</div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Player Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3><i class="fas fa-star"></i> Flair Rating</h3>
+                <div class="stat-value">92/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 92%;"></div>
+                </div>
+                <p class="stat-desc">will pass it to the enemy for fun</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3><i class="fas fa-crosshairs"></i> Shot Accuracy</h3>
+                <div class="stat-value">0/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 45%;"></div>
+                </div>
+                <p class="stat-desc">Atleast he tries</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3><i class="fas fa-futbol"></i> Goals Scored</h3>
+                <div class="stat-value">0/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 99%;"></div>
+                </div>
+                <p class="stat-desc">oh brother this guy stinks</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3><i class="fas fa-exclamation-triangle"></i> Risk Factor</h3>
+                <div class="stat-value">98/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 88%;"></div>
+                </div>
+                <p class="stat-desc">Will pass to the enemy for no reason</p>
+            </div>
+        </div>
+        
+        <!-- Funny Facts -->
+        <div class="funny-section">
+            <h2><i class="fas fa-laugh"></i> Known For...</h2>
+            <div class="facts-grid">
+                <div class="fact">
+                    <i class="fas fa-running"></i>
+                    <h4>Getting Intercepted</h4>
+                    <p>Cant keep the damn ball</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-eye-slash"></i>
+                    <h4>Vision Impairment</h4>
+                    <p>And his blind!!!?</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-trophy"></i>
+                    <h4>positivity</h4>
+                    <p>Loses 4-1 but proud of successful Interception</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-futbol"></i>
+                    <h4>pass Selection</h4>
+                    <p>Will pass with back faceing the wrong way</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Memorable Moments -->
+        <div class="moments-section">
+            <h2><i class="fas fa-star"></i> Legendary Moments</h2>
+            <div class="moment">
+                <div class="moment-date">December 2025</div>
+                <h4>The Great shot catastrophy</h4>
+                <p>tried to score but failed</p>
+            </div>
+           
+        
+        <!-- Secret Stat (Easter Egg) -->
+        <div class="secret-stat">
+            <p><i class="fas fa-eye"></i> SECRET STAT: Has conceded 43 goals directly from failed passes</p>
+        </div>
+        
+        <!-- Quote -->
+        <div class="quote-section">
+            <i class="fas fa-quote-left"></i>
+            <p class="quote">"A white tear just rolled down my thigh"</p>
+            <i class="fas fa-quote-right"></i>
+        </div>
+        
+        <!-- Footer -->
+        <div class="player-footer">
+            <p><span class="highlight">Weakness:</span> Simple passes and basic defending</p>
+            <p><span class="highlight">Signature Move:</span> passing with back turned </p>
+            <p><span class="highlight">Team of Choice:</span> Manchester United (for maguire vibes)</p>
+            <a href="index.html" class="return-home">
+                <i class="fas fa-home"></i> Back to Entire Squad
+            </a>
+        </div>
+    </div>
+    
+    <script src="player-script.js"></script>
+</body>
+</html>

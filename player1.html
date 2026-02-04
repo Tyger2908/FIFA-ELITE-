@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonesey" - FIFA Elite 6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="player-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Player 1 - Red Theme (#ff6b6b) */
+        :root {
+            --player-color: #ff6b6b;
+            --player-dark: #c44545;
+            --player-glow: rgba(255, 107, 107, 0.3);
+            --player-light: #ff9e9e;
+        }
+        
+        .player-header {
+            background: linear-gradient(135deg, var(--player-dark), var(--player-color));
+        }
+        
+        .back-button:hover {
+            background: var(--player-color);
+        }
+        
+        .secret-stat {
+            border-color: var(--player-color);
+        }
+        
+        .highlight {
+            color: var(--player-color);
+        }
+        
+        .stat-fill {
+            background: linear-gradient(90deg, var(--player-dark), var(--player-color));
+        }
+        
+        .return-home {
+            background: var(--player-color);
+        }
+        
+        .return-home:hover {
+            box-shadow: 0 0 20px var(--player-glow);
+        }
+    </style>
+</head>
+<body class="player-page">
+    <div class="container">
+        <!-- Back Button -->
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Squad
+        </a>
+        
+        <!-- Player Header -->
+        <header class="player-header">
+            <div class="player-main-info">
+                <div class="player-avatar">
+                    <img src="Screenshot (106).png" alt="Alex">
+                    <div class="player-rating">78</div>
+                </div>
+                <div class="player-details">
+                    <h1>Jonesey "Dhania boyyyyy"</h1>
+                    <div class="player-tagline">The "Scripting" Expert</div>
+                    <div class="player-motto">"It's not me, it's the bots!"</div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Player Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3><i class="fas fa-fire"></i> Salt Level</h3>
+                <div class="stat-value">99/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 99%;"></div>
+                </div>
+                <p class="stat-desc">Legendary: Threw controller after 90' equalizer from a bronze team</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3><i class="fas fa-wifi"></i> Connection Excuses</h3>
+                <div class="stat-value">87/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 87%;"></div>
+                </div>
+                <p class="stat-desc">Famous quote: "come on gents ... while winning 3-0"</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3><i class="fas fa-ghost"></i> Ghost Goals Blamed</h3>
+                <div class="stat-value">42</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 84%;"></div>
+                </div>
+                <p class="stat-desc">Keeps a spreadsheet "proving" EA targets him specifically</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3><i class="fas fa-trophy"></i> Goals Scored</h3>
+                <div class="stat-value">71/100</div>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 68%;"></div>
+                </div>
+                <p class="stat-desc">Bangah from stanga</p>
+            </div>
+        </div>
+        
+        <!-- Funny Facts -->
+        <div class="funny-section">
+            <h2><i class="fas fa-laugh"></i> Known For...</h2>
+            <div class="facts-grid">
+                <div class="fact">
+                    <i class="fas fa-microphone"></i>
+                    <h4>Commentary Gold</h4>
+                    <p>Provides 90-minute commentary blaming everything but his own decisions</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-search"></i>
+                    <h4>Conspiracy Theorist</h4>
+                    <p>Has analyzed "evidence" of bots being shit</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-redo"></i>
+                    <h4>PEP talk king</h4>
+                    <p>knows just what to say</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-utensils"></i>
+                    <h4>always chowing</h4>
+                    <p>gee some noodles there"</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Memorable Moments -->
+        <div class="moments-section">
+            <h2><i class="fas fa-star"></i> Legendary Moments</h2>
+            <div class="moment">
+                <div class="moment-date">december 2026</div>
+                <h4>the creation</h4>
+                <p>"HALALA Jonesey"</p>
+            </div>
+          
+        <!-- Secret Stat (Easter Egg) -->
+        <div class="secret-stat">
+            <p><i class="fas fa-eye"></i> SECRET STAT: Has watched 127 hours of "How to beat scripting" YouTube videos</p>
+        </div>
+        
+        <!-- Quote -->
+        <div class="quote-section">
+            <i class="fas fa-quote-left"></i>
+            <p class="quote">"Look at this AI Ey"</p>
+            <i class="fas fa-quote-right"></i>
+        </div>
+        
+        <!-- Footer -->
+        <div class="player-footer">
+            <p><span class="highlight">Weakness:</span> Calling for the ball with enemy in front of him</p>
+            <p><span class="highlight">Signature Move:</span> The "Come on gents Rant (5+ minutes, volume increasing)</p>
+            <p><span class="highlight">Team of Choice:</span> Liverpool (blames AI when he loses with them)</p>
+            <a href="index.html" class="return-home">
+                <i class="fas fa-home"></i> Back to Entire Squad
+            </a>
+        </div>
+    </div>
+    
+    <script src="player-script.js"></script>
+</body>
+</html>
